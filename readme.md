@@ -1,4 +1,4 @@
-# KOÇTAŞ
+# Example Pug
 
 ## Install
 npm install gulp-cli -g
