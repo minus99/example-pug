@@ -1,0 +1,23 @@
+.banner {
+    //*discover products
+    &01 {
+        .banner-title {
+            min-height: 46px;
+        }
+    }
+
+    //*countdown
+    &04 {
+        .countdown {
+            position: absolute;
+            bottom: 50%;
+            left: 30%;
+            transform: translateY(50%);
+        }
+    }
+
+    //*campaign product list
+    &08 {
+        padding-right: 0 !important;
+    }
+}

@@ -1,0 +1,13 @@
+#footer-menu {
+    ul {
+        columns: 2;
+        column-gap: 40px;
+    }
+    .list-title {
+        border: none !important;
+        pointer-events: none;
+        svg {
+            display: none;
+        }
+    }
+}

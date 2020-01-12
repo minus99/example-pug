@@ -1,0 +1,58 @@
+.filter {
+    .acc2 {
+        > [aria-expanded="true"] {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            background: $color4;
+            min-height: 63px;
+            
+            .icon-arrow1 {
+                opacity: 0;
+            }
+
+            .filter-desc {
+                display: none !important;
+            }
+        }
+    }
+    .sub-filter {
+        top: $header-menu-selected-title-height;
+        height: calc(100% - #{$header-menu-selected-title-height});
+        transition: none;
+    }
+
+    &-collapse {
+        top: 0;
+        height: 100%;
+
+        opacity: 0;
+        left: -50%;
+        transition: all .12s cubic-bezier(0.950, 0.050, 0.795, 0.035); /* easeInExpo */
+    }
+ 
+    &-ready {
+        .filter-collapse {
+            display: block;
+        }
+        .filter-overlay {
+            display: block;
+        }
+    }
+    &-animate {
+        overflow: hidden;
+        width: 100%;
+
+        .filter-overlay {
+            opacity: 1;
+        }
+                
+        .filter-collapse {
+            opacity: 1;
+            left: 0;
+            transition: all .3s cubic-bezier(0.190, 1.000, 0.220, 1.000); /* easeOutExpo */
+        }
+    }
+}

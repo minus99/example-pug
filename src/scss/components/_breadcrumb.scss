@@ -1,0 +1,21 @@
+//breadcrumb
+.breadcrumb {
+    .dropdown-menu {
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.19);
+        z-index: $zindex-popover;
+        > li {
+            &:last-child {
+                border-bottom-color: transparent !important;
+            }
+        }
+    }
+    .icon-arrow7 {
+        transition: all .2s ease;
+    }
+    [aria-expanded="true"] {
+        background: $color255;
+        .icon-arrow7 {
+            @extend .rotate-bottom;
+        }
+    }
+}

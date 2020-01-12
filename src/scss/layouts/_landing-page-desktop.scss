@@ -1,0 +1,21 @@
+.landing-page {
+    .landingcampaigns {
+        @include aspect-ratio(1200, 450);
+    }
+
+    .landing-categories-list {
+        max-height: 249px;
+        @include aspect-ratio(184, 134);
+        .swiper-button-next {
+            right: -16px;
+        }
+        .swiper-button-prev {
+            left: 4px;
+        }
+    }
+    
+    .landing-blog-posts {
+        @include aspect-ratio(590, 440);
+    }
+}
+

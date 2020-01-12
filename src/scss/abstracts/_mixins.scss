@@ -1,0 +1,29 @@
+//font-face
+@mixin font-face($family, $url, $fontWeight: normal, $fontStyle: normal) {
+    @font-face {
+        font-family: $family;
+        src:    //url(#{$url + '.woff2'}) format('woff2'),
+                //url(#{$url + '.woff'}) format('woff'),
+                url(#{$url + '.ttf'}) format('truetype');
+        font-weight: $fontWeight;
+        font-style: $fontStyle;
+        font-display: swap;
+    }
+}
+
+//aspect ratio
+@mixin aspect-ratio($w, $h) {
+    .embed-responsive {
+        &::before {
+            padding-top: percentage($h / $w);
+        }
+    }
+}
+
+//list spacing
+@mixin set-list($s) {
+    margin: #{-$s};
+    > * {
+        padding: $s;
+    }
+}

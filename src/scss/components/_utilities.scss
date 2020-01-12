@@ -1,0 +1,287 @@
+// Font Sizes
+.font-size {
+    &-0 {
+        font-size: $font-size0 !important;
+    }
+    &-1 {
+        font-size: $font-size1 !important;
+    }
+    &-2 {
+        font-size: $font-size2 !important;
+    }
+    &-3 {
+        font-size: $font-size3 !important;
+    }
+    &-4 {
+        font-size: $font-size4 !important;
+    }
+    &-5 {
+        font-size: $font-size5 !important;
+    }
+    &-6 {
+        font-size: $font-size6 !important;
+    }
+    &-7 {
+        font-size: $font-size7 !important;
+    }
+    &-8 {
+        font-size: $font-size8 !important;
+    }
+    &-9 {
+        font-size: $font-size9 !important;
+    }
+    &-10 {
+        font-size: $font-size10 !important;
+    }
+}
+
+// Line Heights
+.line-height {
+    &-1 {
+        line-height: $line-height1;
+    }
+    &-1_5 {
+        line-height: $line-height1_5;
+    }
+}
+
+// Rotate Objects *default right
+.rotate {
+    &-top {
+        transform: rotate(-90deg) !important;
+    }
+    &-left {
+        transform: rotate(-180deg) !important;
+    }
+    &-bottom {
+        transform: rotate(90deg) !important;
+    }
+    &-mirror {
+        transform: scale(-1) !important;
+    }
+}
+
+// Css Icons
+.css-icon {
+    &-light {
+        > svg {
+            --color2: #444;
+        }
+    }
+    &-sm {
+        > svg {
+            font-size: 25px;
+        }
+    }
+    &-md {
+        > svg {
+            font-size: 40px;
+        }
+    }
+    &-lg {
+        > svg {
+            font-size: $font-size10;
+        }
+    }
+    &-m-0 {
+        > svg {
+            margin: 0 !important;
+        }
+    }
+}
+
+// Overlays
+.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: $zindex-fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: $color0, $alpha: .4);
+    opacity: 0;
+    transition: all .2s ease;
+
+    &-inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Text
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+
+// Footer Hidden on Mobile
+.footer-d-none_d-lg-block {
+    .site-footer {
+        display: none;
+    }
+}
+
+// Patterns
+.pattern {
+    &01 {
+        background-image: url(../images/frontend/pattern01.png);
+        background-position: left top;
+    }
+}
+
+// Radio Button
+.f-radio {
+    .icon-radio-active {
+        display: none;
+    }
+    .active & {
+        .icon-radio-active {
+            display: block;
+        }
+        .icon-radio {
+            display: none;
+        }
+    }
+}
+
+// Checkbox Button
+.f-checkbox {
+    .icon-checkbox-active {
+        display: none;
+    }
+    .active & {
+        .icon-checkbox-active {
+            display: block;
+        }
+        .icon-checkbox {
+            display: none;
+        }
+    }
+}
+
+// Line Arasında Yazı
+
+.line-or{
+    position: relative;
+    &:before{
+        content:'';
+        border:1px solid $color3;
+        height:1px;
+        left:-10px;
+        top:50%;
+        width:40%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    &:after{
+        content:'';
+        border:1px solid $color3;
+        right:-10px;
+        top:50%;
+        width:40%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    span{
+        font-weight: $font-weight5;
+    }
+}
+
+/* Success Input Icon */
+
+.form-control.is-valid{
+    background-size:32px;
+    background-position: center right calc(0em + .375rem);
+}
+
+.back-button{
+    background: $color255;
+    svg{
+        transform: rotate(180deg);
+    }
+}
+
+// Scrollbar hide
+.hide-scrollbar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+// Scrollbar Custom
+.custom-scrollbar {
+    overflow: auto;
+    scrollbar-color: $color1 $color3;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $color3;
+        border-radius: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color1;
+        border-radius: 2px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: $color0;
+    }
+}
+
+// Bg Item Area
+
+.bg-item{
+    min-height: 90px;
+    background-position: left;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+// Minus Flex Center
+
+.mns-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-between{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-start{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &-end{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+// Strecthed Link On
+.stretched-link-on {
+    position: relative;
+    z-index: 2;
+}
+
+// Display Grid
+.d-grid {
+    display: grid;
+}
+@for $i from 1 through 12 {
+    .ga#{$i} {
+        grid-area: ga#{$i};
+    }
+}
+
+// Tables
+.table-layout-fixed {
+    table-layout: fixed;
+}

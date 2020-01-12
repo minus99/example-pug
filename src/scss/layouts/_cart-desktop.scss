@@ -1,0 +1,204 @@
+.cart-header-lg-block{
+    .cart-header{
+        display: block;
+    }
+}
+
+.cart-header{
+    position:sticky;
+    top:0px;
+    z-index: $zindex-fixed;
+}
+
+.cart-steps-area{
+    background: $color255 !important;
+}
+
+.cart-layout{
+    justify-content: center;
+    &-left{
+        max-width:792px;
+        .alert-product{
+            max-width:350px;
+        }
+        .cart-detail{
+            .cart-prd{
+                border-top:none !important;
+                .prd-content{
+                    .prd-price-area{
+                        position: absolute;
+                        right:0px;
+                        top:0px;
+                    }
+                    .prd-delete{
+                        top:100px;
+                        max-width:25%;
+                    }
+                }
+            }
+        }
+    }
+    &-right{
+        max-width:378px;
+        &-wrapper{
+            position:sticky;
+            top:125px;
+            z-index: $zindex-fixed - 1;
+            .cart-summary{
+                padding-bottom:0px;
+            }
+            .cart-next-buttons , .cart-summary-total-price{
+                position: relative;
+                bottom:0px;
+                border:none;
+            }
+        }
+    }
+    &-bottom{
+    }
+}
+
+
+//Delivery
+
+.page-order-delivery{
+    .delivery-adress-select{
+        border-top:none !important;
+    }
+}
+
+#address-choose{
+    .modal-close{
+        display: block;
+    }
+}
+
+.delivery-layout{
+    .delivery-adress-type{
+        border-bottom:1px solid transparent;
+    }
+    .delivery-adress-checkbox{
+        border-top:1px solid $color4;
+    }
+    .cargos{
+        max-height: 420px;
+        height:auto;
+        .cargo-item-titles{
+            position: sticky;
+            top:0;
+            z-index: 1;
+        }
+    }
+}
+
+
+// Delivery New Adress
+
+.page-delivery-new-address{
+    .cart-header{
+        display: block;
+    }
+}
+
+
+// Payment
+
+    .mns-custom-nav{
+        .nav{
+            border-bottom:none;
+        }
+        .mns-nav-item{
+            background: $color3;
+            cursor: pointer;
+            border:none;
+            &.active{
+                background: $color255;
+                border:none;
+            }
+        }
+    }
+
+
+    .payment-products , .payment-address , .credit-card-hire-purchase{
+        border-top:none;
+        [data-toggle="collapse"][aria-expanded="false"] > div > .icon-minus{
+            display: none;
+        }
+        [data-toggle="collapse"][aria-expanded="true"] > div > .icon-plus{
+            display: none;
+        }
+    }
+    .payment-products{
+        .cart-prd{
+            border-bottom: none;
+        }
+    }
+    .payment-address{
+        .delivery-adress-item{
+            .row{
+                border-top:none !important;
+                border-bottom:1px solid $color3;
+                &:last-child{
+                    border:none;
+                }
+            }
+        }
+    }
+    .contracts{
+        .contract-button{
+            border-top:none !important;
+            &:first-child{
+                border-bottom:1px solid $color3;
+            }
+        }
+    }
+    .credit-card-hire-purchase{
+        .panel-title{
+            border-top:none !important;
+        }
+    }
+    .cvc-info{
+        &-text{
+            left:inherit;
+        }
+    }
+    .bank-item{
+        &:last-child{
+            border-bottom:none !important;
+        }
+    }
+
+    .page-order-payment-success{
+        .payment-left{
+            max-width:600px;
+            height:calc(100vh - 96px);
+            margin-left:auto;
+            position: sticky;
+            top:95px;
+            .payment-icon{
+                width:280px;
+            }
+        }
+        .payment-right{
+            background: $color4 !important;
+            max-width:600px;
+            margin-right:auto;
+            padding-bottom:50px;
+            padding-top:150px;
+            .guest-payment-form{
+                background: $color255 !important;
+            }
+            .payment-buttons{
+                position:relative;
+                background: none !important;
+                a{
+                    &:first-child{
+                        border:1px solid $color1;
+                        u{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }

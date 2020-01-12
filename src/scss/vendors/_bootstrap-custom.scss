@@ -1,0 +1,249 @@
+// https://getbootstrap.com/docs/4.3/getting-started/theming/
+// Your variable overrides
+
+// Color system l:6
+$theme-colors: (
+  "c0": $color0,
+  "c1": $color1,
+  "c2": $color2,
+  "c3": $color3,
+  "c4": $color4,
+  "c5": $color5,
+  "c6": $color6,
+  "c7": $color7,
+  "c8": $color8,
+  "c9": $color9,
+  "c10": $color10,
+  "c11": $color11,
+  "c12": $color12,
+  "c255": $color255,
+);
+
+// Spacing l:124
+$spacer: 15px;
+$spacers: (
+  0: $space0,
+  5: $space1,
+  10: $space2,
+  15: $space3,
+  20: $space4,
+  30: $space5,
+  40: $space6,
+  50: $space7,
+  60: $space8,
+);
+
+// Body l:160
+$body-bg: $color4;
+$body-color: $color1;
+
+// Links l:168
+$link-color: inherit;
+$link-decoration: none;
+$link-hover-color: inherit;
+$link-hover-decoration: none;
+$emphasized-link-hover-darken-percentage: 0;
+
+// Grid breakpoints l:186
+$grid-breakpoints: (
+  xs: $breakpoint0,
+  sm: $breakpoint1,
+  md: $breakpoint2,
+  lg: $breakpoint3
+);
+
+// Grid containers l:203
+$container-max-widths: (
+  sm: $container1,
+  md: $container2,
+  lg: $container3
+);
+
+// Grid columns l:217
+$grid-columns: 24;
+$grid-gutter-width: 0;
+
+// Components l:235
+$border-color: $color3;
+
+$border-radius: 3px;
+$border-radius-lg: 4px;
+$border-radius-sm: 2px;
+
+// Typography l:268
+$font-family-sans-serif: $font1;
+$font-family-monospace: $font2;
+
+$font-size-base: 0.875rem; //1rem default 16px >> 14/16
+$font-size-lg: 1rem;
+$font-size-sm: 0.75rem;
+
+$font-weight-bold: $font-weight5;
+$font-weight-bolder: $font-weight7;
+
+$line-height-base: $line-height;
+
+// Tables l:343
+$table-accent-bg: $color4;
+$table-hover-color: $color255;
+$table-hover-bg: $color8;
+
+// Buttons + Forms l:379
+$input-btn-padding-y: .75rem;
+
+$input-btn-focus-width: 0;
+$input-btn-focus-box-shadow: none;
+
+$input-btn-padding-y-lg: .75rem;
+$input-btn-font-size-lg: $font-size-base;
+$input-btn-line-height-lg: 2.3;
+
+$input-btn-padding-y-sm: .5rem;
+$input-btn-font-size-sm: $font-size-base;
+$input-btn-line-height-sm: $line-height-base;
+
+// Buttons l:406
+$btn-padding-x: 1.75rem;
+$btn-padding-x-lg: 1.75rem;
+$btn-padding-x-sm: .875rem;
+
+$btn-font-weight: $font-weight5;
+$btn-box-shadow: none;
+$btn-active-box-shadow: none;
+
+$btn-border-radius: 2px;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 2px;
+
+// Forms l:447
+$label-margin-bottom: 4px;
+
+$input-padding-x: .875rem;
+
+$input-padding-x-sm: $input-padding-x;
+
+$input-padding-x-lg: $input-padding-x;
+
+$input-border-radius: 2px;
+
+$input-color: $color1;
+$input-border-color: $color3;
+$input-box-shadow: none;
+
+$input-focus-border-color: $color3;
+
+$custom-control-indicator-checked-color: $color255;
+$custom-control-indicator-checked-bg: $color8;
+$custom-control-indicator-checked-border-color: $color8;
+
+$custom-select-indicator-padding: 1.425rem;
+$custom-select-bg-size: 32px;
+$custom-select-indicator: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23444' d='M15.763 18.196l-3.227-3.52A1 1 0 0 1 13.273 13h6.454a1 1 0 0 1 .737 1.676l-3.227 3.52a1 1 0 0 1-1.474 0z'/%3E%3C/svg%3E");
+$custom-select-border-radius: $input-border-radius;
+$custom-select-background: $custom-select-indicator no-repeat right 4px center / $custom-select-bg-size;
+
+// Form validation l:645
+$form-feedback-icon-valid: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iOSIgZmlsbD0iIzM5QjU0QSIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTEyLjgxIDE2LjAxNmExIDEgMCAwIDAtMS4zMzggMS40ODZsMi4wNDQgMS44NDFhMSAxIDAgMCAwIDEuMzc3LS4wMzZsNS41OTctNS41OThhMSAxIDAgMCAwLTEuNDE0LTEuNDE0bC00LjkyNyA0LjkyNy0xLjM0LTEuMjA2eiIvPgogICAgPC9nPgo8L3N2Zz4K");
+
+// Tooltips
+$tooltip-padding-y: 10px;
+$tooltip-padding-x: 10px;
+
+// Modals l:927
+$modal-inner-padding: 20px 15px;
+
+$modal-dialog-margin: 0px;
+$modal-dialog-margin-y-sm-up: 200px;
+
+$modal-content-color: $color1;
+$modal-content-bg: $color255;
+$modal-content-border-color: green;
+$modal-content-border-width: 0;
+$modal-content-border-radius: 0;
+
+$modal-backdrop-bg: $color0;
+$modal-backdrop-opacity: .2;
+$modal-header-border-width: 1px;
+$modal-header-border-color: $color3;
+$modal-header-padding-y: 16px;
+$modal-header-padding-x: 15px;
+
+$modal-lg: 1100px;
+$modal-md: 592px;
+
+
+
+// ...
+
+
+
+// Include parts of Bootstrap
+// Required Files
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+// Remove mixins
+@mixin table-row-variant($state, $background, $border: null) {};
+@mixin pagination-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {}
+
+// Edit mixins
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+}
+
+// Remove from map
+$spacers: map-remove($spacers, 1, 2, 3, 4);
+$sizes: map-remove($sizes, 25, 50, 75);
+$theme-colors: map-remove($theme-colors, "primary", "secondary", "success", "info", "warning", "danger", "light", "dark");
+
+// Optional Files
+//@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+//@import "../../../node_modules/bootstrap/scss/type";
+//@import "../../../node_modules/bootstrap/scss/images";
+//@import "../../../node_modules/bootstrap/scss/code";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/tables";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+//@import "../../../node_modules/bootstrap/scss/button-group";
+//@import "../../../node_modules/bootstrap/scss/input-group";
+@import "../../../node_modules/bootstrap/scss/custom-forms";
+@import "../../../node_modules/bootstrap/scss/nav";
+//@import "../../../node_modules/bootstrap/scss/navbar";
+//@import "../../../node_modules/bootstrap/scss/card";
+//@import "../../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../../node_modules/bootstrap/scss/pagination";
+//@import "../../../node_modules/bootstrap/scss/badge";
+@import "../../../node_modules/bootstrap/scss/jumbotron";
+@import "../../../node_modules/bootstrap/scss/alert";
+@import "../../../node_modules/bootstrap/scss/progress";
+@import "../../../node_modules/bootstrap/scss/media";
+//@import "../../../node_modules/bootstrap/scss/list-group";
+@import "../../../node_modules/bootstrap/scss/close";
+@import "../../../node_modules/bootstrap/scss/toasts";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/tooltip";
+//@import "../../../node_modules/bootstrap/scss/popover";
+//@import "../../../node_modules/bootstrap/scss/carousel";
+@import "../../../node_modules/bootstrap/scss/spinners";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/print"; 
+
+
+//modal fixer
+.modal-open {
+  [style*="margin-right: -#{$scroll-width-lg}"],
+  [style*="margin-right: -#{$scroll-width-lg + 1}"] {
+      margin-right: 0 !important;
+  }
+  [style*="padding-right: #{$scroll-width-lg}"],
+  [style*="padding-right: #{$scroll-width-lg + 1}"] {
+      padding-right: 0 !important;
+  }
+}

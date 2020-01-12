@@ -1,0 +1,60 @@
+.swiper-button-prev,
+.swiper-button-next {
+    display: block;
+}
+//CUSTOM CFG
+//product widget
+.swiper-product {
+    $p: 30px;
+    min-height: 490px;
+    .swiper-inner {
+        padding-left: 0;
+        margin-left: #{-$p};
+    }
+    .swiper-slide {
+        padding-left: #{$p};
+        width: calc(100% / 3);
+    }
+}
+
+//vertical pagination
+.swiper-pagination-vertical {
+  .swiper-pagination {
+    right: 5%;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  &.swiper-container-horizontal {
+      .swiper-pagination-bullets .swiper-pagination-bullet {
+          margin: 10px 0;
+      }
+  }
+}
+
+//swipe only mobile
+.mobi-swiper {
+    > .swiper-inner {
+        > .swiper-wrapper {
+          flex-wrap: wrap;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+//swipe only desktop
+.desktop-swiper {
+    > .swiper-inner {
+      > .swiper-wrapper {
+        flex-wrap: nowrap;
+      }
+  }
+  .swiper-pagination {
+    display: block;
+  }
+}

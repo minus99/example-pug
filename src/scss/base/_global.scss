@@ -1,0 +1,30 @@
+::selection {
+  background: $color8;
+  color: $color255;
+  text-shadow: 0 0px 30px $color255;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    cursor: pointer;
+    outline: none;
+}
+
+label {
+    font-size: $font-size2;
+    color: $color2;
+    font-weight: $font-weight5;
+}
+
+.ul-clear{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

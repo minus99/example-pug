@@ -1,0 +1,17 @@
+$ml:10px;
+.countdown_row {
+    margin-left: -$ml;
+}
+.countdown_section {
+    padding: 10px 5px;
+    min-width: 45px;
+    margin-left: $ml;
+}
+.countdown_amount {
+    font-size: 20px;
+    font-weight: 700;
+}
+.countdown_time {
+    font-size: 12px;
+    margin-top: 5px;
+}

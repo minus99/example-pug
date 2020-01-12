@@ -1,0 +1,86 @@
+// Fonts
+$font0: 'arial', 'sans-serif';
+$font1: 'Roboto', $font0;
+$font2: 'Courier New', $font0;
+
+//Font Sizes - 1rem default 16px = xx/16
+$px-to-rem: 16;
+$font-size0: 0;
+$font-size1: 10/$px-to-rem#{rem};
+$font-size2: 12/$px-to-rem#{rem};
+$font-size3: 14/$px-to-rem#{rem};
+$font-size4: 16/$px-to-rem#{rem};
+$font-size5: 18/$px-to-rem#{rem};
+$font-size6: 20/$px-to-rem#{rem};
+$font-size7: 22/$px-to-rem#{rem};
+$font-size8: 24/$px-to-rem#{rem};
+$font-size9: 26/$px-to-rem#{rem};
+$font-size10: 50/$px-to-rem#{rem};
+
+// Font Weights - https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping
+$font-weight1: 100;
+$font-weight2: 200;
+$font-weight3: 300;
+$font-weight4: 400;
+$font-weight5: 500;
+$font-weight6: 600;
+$font-weight7: 700;
+$font-weight8: 800;
+$font-weight9: 900;
+$font-weight10: 950;
+
+// Line Heights
+$line-height: 1.3;
+$line-height1: 1;
+$line-height1_5: 1.5;
+
+// Colors
+$color0: #000000;
+$color1: #444444;
+$color2: #838383;
+$color3: #DDDDDD;
+$color4: #F2F2F2;
+$color5: #B81622;
+$color6: #BC0C10;
+$color7: #DD1F21;
+$color8: #EC6E00;
+$color9: #FED9B8;
+$color10: #3588F4;
+$color11: #10C315;
+$color12: #F8F8F8;
+$color255: #FFFFFF;
+
+// Spacing
+$space0: 0;
+$space1: 5px;
+$space2: 10px;
+$space3: 15px;
+$space4: 20px;
+$space5: 30px;
+$space6: 40px;
+$space7: 50px;
+$space8: 60px;
+$space9: 70px;
+$space10: 80px;
+
+// Breakpoints
+$breakpoint0: 0;
+$breakpoint1: 576px;
+$breakpoint2: 768px;
+$breakpoint3: 1025px;
+
+// Containers
+$container1: 768px;
+$container2: 1025px;
+$container3: 1200px;
+
+// Misc in Site
+$header-main-height: 106px;
+$header-mini-height: 52px;
+$header-menu-selected-title-height: 63px;
+$dropdown-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.19);
+
+$scroll-width-lg: 16px;
+$header-main-height-lg: 169px;
+$header-mini-height-lg: 112px;
+$page-box-shadow-lg: 0 0 6px 0 rgba(0, 0, 0, 0.14);

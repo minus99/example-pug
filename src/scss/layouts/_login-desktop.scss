@@ -1,0 +1,47 @@
+.page-login-content{
+    position: relative;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-bottom:50px;
+    > .container{
+        background: none;
+    }
+    &:after{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        background: rgba(0,0,0, .6);
+    }
+    .member-login-form-area{
+        z-index: 1;
+        &-tab{
+            .nav-item{
+                background: $color255;
+            }
+        }
+        &-content{
+            height:100%;
+            max-height:750px;
+            .continue-guest-login{
+                margin:40px -50px;
+                background:$color4;
+            }
+        }
+    }
+    .member-login-desc{
+        z-index: 1;
+        color:$color255;
+        position: sticky;
+        top:$header-main-height-lg;
+        height: min-content;
+        ul{
+            li{
+                line-height: 24px;
+                font-size:$font-size4;
+            }
+        }
+    }
+}

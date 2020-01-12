@@ -1,0 +1,38 @@
+.daily-opportunity {
+    @include aspect-ratio(1200, 190);
+}
+
+.primary-categories {
+    @include aspect-ratio(1200, 450);
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+.campaigns {
+    @include aspect-ratio(540, 400);
+}
+
+.opportunity-products {
+    @include aspect-ratio(184, 134);
+    .swiper-button-next {
+        right: -16px;
+    }
+    .swiper-button-prev {
+        left: 4px;
+    }
+}
+
+.discover-products {
+    .swiper-wrapper {
+        width: auto;
+    }
+}
+
+.blog-posts {
+    @include aspect-ratio(590, 440);
+}
+
+.primary-brands {
+    @include aspect-ratio(166, 121);
+}

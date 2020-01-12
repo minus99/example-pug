@@ -1,0 +1,19 @@
+//https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping
+//100	Thin (Hairline)
+//200	Extra Light (Ultra Light)
+//300	Light
+//400	Normal
+//500	Medium
+//600	Semi Bold (Demi Bold)
+//700	Bold
+//800	Extra Bold (Ultra Bold)
+//900	Black (Heavy)
+//950   Extra Black (Ultra Black)
+
+//ROBOTO
+//regular
+@include font-face('Roboto', 'fonts/Roboto/Roboto-Regular', 400, normal);
+//medium
+@include font-face('Roboto', 'fonts/Roboto/Roboto-Medium', 500, normal);
+//bold
+@include font-face('Roboto', 'fonts/Roboto/Roboto-Bold', 700, normal);

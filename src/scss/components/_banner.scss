@@ -1,0 +1,52 @@
+.banner {
+    position: relative;
+
+    //*discover products
+    &01 {
+
+    }
+
+    //*opportunity products
+    &03 {
+        svg[class^="icon-"] {
+            margin-top: $space1;
+            margin-bottom: $space1;
+        }
+    }
+
+    //*countdown
+    &04 {
+        .countdown {
+            position: absolute;
+            bottom: $spacer;
+            left: $spacer;
+        }
+    }
+
+    //*site badges
+    &05 {
+        svg {
+            font-size: 57px;
+        }
+    }
+
+    //*campaign product list
+    &08 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding-right: 40% !important;
+    }
+
+    //*search matching categories
+    &09 {
+        .active & {
+            .banner-media {
+                border-color: $color8 !important;
+            }
+        }
+        .banner-title {
+            min-height: 32px;
+        }
+    }
+}

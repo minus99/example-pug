@@ -1,0 +1,14 @@
+.page-member-koctas-cars {
+    #accordionMenu {
+        .panel-header {
+            &:after {
+                content: "sdsd";
+            }
+        }
+        #collapseOne, #collapseTwo {
+            .show {
+                margin-top: 15px !important;
+            }
+        }
+    }
+}

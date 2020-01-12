@@ -1,0 +1,18 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &-more {
+        &[aria-expanded="false"] {
+            .more0 {
+                display: none;
+            }
+        }
+        &[aria-expanded="true"] {
+            .more1 {
+                display: none;
+            }
+        }
+    }
+}

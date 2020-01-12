@@ -1,0 +1,95 @@
+.header-menu {
+    [aria-expanded="true"] {
+        position: static;
+        min-height: auto;
+        background: none;
+    }
+    &-collapse {
+        position: static;
+        opacity: 1;
+        overflow: visible !important;
+        height: auto;
+        &:not(.show) {
+            display: block !important;
+        }
+    }
+    .sub-menu {
+        position: absolute;
+        top: 57px;
+        overflow: visible !important;
+        height: auto;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background: $color255;
+        }
+        &::before {
+            left: -100%;
+        }
+        &::after {
+            right: -100%;
+        }
+    }
+
+    .lvl1 {
+        > li {
+            position: static;
+            border-left: 1px solid $color3;
+            > a {
+                border-bottom-color: transparent !important;
+                border-bottom-width: 2px !important;
+                &[aria-expanded="true"] {
+                    color: $color8 !important;
+                    border-bottom-color: $color8 !important;
+                }
+                > span {
+                    font-size: $font-size2 !important;
+                }
+            }
+            &:first-child {
+                border-left-color: transparent !important;
+            }
+        }
+    }
+
+    .lvl2 {
+        li {
+            > a {
+                border: none !important;
+            }
+        }
+    }
+
+    .lvl3 {
+        display: none !important;
+    }
+
+    .lvl3-desktop {
+        z-index: 2;
+        position: relative;
+        a + a {
+            &::before {
+                content: ', ';
+            }
+        }
+    }
+
+    .icon-arrow1,
+    .icon-arrow5,
+    .cat-img {
+        display: none;
+    }
+
+    .header-menu-overlay {
+        top: $header-main-height-lg;
+    }
+
+    &-animate {
+        padding-right: $scroll-width-lg;
+    }
+}

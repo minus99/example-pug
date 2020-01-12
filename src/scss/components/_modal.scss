@@ -1,0 +1,60 @@
+.modal {
+    &-dialog,
+    &-content {
+        height: 100%;
+    }
+    
+    &-close {
+        position: absolute;
+        top: 14px;
+        right: 15px;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    &-header {
+        position: relative;
+        background: $color4;
+        font-size: $font-size5;
+        color: $color1;
+        font-weight: $font-weight5;
+        line-height: $line-height1_5;
+        padding-right: 60px;
+        word-break: break-word;
+    }
+
+    &-body {
+        position: relative;
+        background: $color255;
+        overflow: auto;
+        > *:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    &-footer {
+        position: relative;
+        background: $color255;
+        display: block;
+        padding: 5px;
+        > :not(:first-child) {
+            margin-left: 0;
+        }
+        > :not(:last-child) {
+            margin-right: 0;
+        }
+        &-btn {
+            font-size: 16px;
+        }
+    }
+
+    // V2
+    &-v2 {
+        .modal {
+            &-body {
+                background: $color4;
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+//ABSTRACTS
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//BOOTSTRAP
+@import 'vendors/bootstrap-custom';
+
+//BASE
+@import 'base/typography';
+@import 'base/icons';
+@import 'base/global';
+
+//COMPONENTS
+@import 'components/swiper';
+@import 'components/button';
+@import 'components/countdown';
+@import 'components/accordion';
+@import 'components/breadcrumb';
+@import 'components/modal';
+@import 'components/utilities';
+@import 'components/header-menu';
+@import 'components/social-media';
+@import 'components/other-platforms';
+@import 'components/footer-menu';
+@import 'components/copyright';
+@import 'components/filter';
+@import 'components/banner';
+@import 'components/section';
+
+//LAYOUT
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/home';
+@import 'layouts/product-list';
+@import 'layouts/product-detail';
+@import 'layouts/login';
+@import 'layouts/corporate';
+@import 'layouts/cart';
+@import 'layouts/member';
+@import 'layouts/accordion-menu';
+@import 'layouts/member-koctas';
+@import 'layouts/landing-page';
+
+//DESKTOP
+@media (min-width: $breakpoint3) {
+  //COMPONENTS
+  @import 'components/swiper-desktop';
+  @import 'components/countdown-desktop';
+  @import 'components/breadcrumb-desktop';
+  @import 'components/modal-desktop';
+  @import 'components/utilities-desktop';
+  @import 'components/header-menu-desktop';
+  @import 'components/filter-desktop';
+  @import 'components/banner-desktop';
+
+  //LAYOUT
+  @import 'layouts/header-desktop';
+  @import 'layouts/footer-desktop';
+  @import 'layouts/home-desktop';
+  @import 'layouts/product-list-desktop';
+  @import 'layouts/product-detail-desktop';
+  @import 'layouts/login-desktop';
+  @import 'layouts/corporate-desktop';
+  @import 'layouts/cart-desktop';
+  @import 'layouts/member-desktop';
+  @import 'layouts/accordion-menu-desktop';
+  @import 'layouts/member-koctas-desktop';
+  @import 'layouts/landing-page-desktop';
+}

@@ -1,0 +1,70 @@
+.modal {
+    &-dialog,
+    &-content {
+        height: auto;
+    }
+
+    &-content {
+        border-radius: $border-radius;
+        overflow: hidden;
+    }
+
+    &-close {
+        top: 20px;
+        right: 16px;
+        .icon-close {
+            font-size: 46px;
+        }
+    }
+
+    &-header {
+        font-size: $font-size8;
+        padding: 30px 75px 15px 50px;
+        border: none;
+        + .modal-body {
+            padding-top: 15px;
+        }
+    }
+
+    &-body {
+        background: $color4;
+        padding: 30px 50px;
+    }
+
+    &-footer {
+        padding: 20px 50px;
+        border: none;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.05);
+        &-btn {
+            max-width: 350px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+
+
+    // V2
+    &-v2 {
+        &.modal-dialog {
+            margin: 10px auto;
+        }
+        .modal {
+            &-close {
+                top: 17px;
+                right: 36px;
+                color: $color255;
+            }
+            &-header {
+                font-size: $font-size6;
+                font-weight: $font-weight4;
+                padding: 25px 30px;
+                background: $color1;
+                color: $color255;
+            }
+            &-body {
+                background: $color255;
+                padding: 0;
+            }
+        }
+    }
+}

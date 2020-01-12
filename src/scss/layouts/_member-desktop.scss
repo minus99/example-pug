@@ -1,0 +1,74 @@
+// Üyelik Mobil 2.seviye Sayfalar
+
+.members-header-d-none_d-lg-block{
+    .site-header{
+        display: block;
+    }
+    .member-left-menu{
+        .dropdown{
+            display: block;
+        }
+    }
+}
+
+.page-member {
+    .container {
+        .member-content {
+            .nav-tabs {
+                li {
+                    border-bottom: inherit;
+                    .active {
+                        background-color: $color255;
+                        border-bottom: none;
+                        border-bottom-color: $color255;
+                    }
+                }
+                
+                .nav-link {
+                    border: none !important;
+                }
+            }
+            .member-new-msg-status {
+                width: 8px;
+                height: 8px;
+                background-color: $color1;
+                border-radius: 100%;
+            }
+            .member-msg-status {
+                position: inherit;
+                right: inherit;
+            }
+        }
+    }
+    .grid-prd-chng {
+        li {
+            padding: 10px 0;
+        }
+    }
+
+    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+        border-bottom-color: $color255;
+    }
+
+    .page-member .nav-tabs .nav-link:hover, .page-member .nav-tabs .nav-link:focus {
+        border-bottom-color: $color255;
+    }
+
+    .position-lg-relative {
+        position: relative;
+    }
+
+    .bg-lg-white {
+        background-color: $color255 !important;
+    }
+
+    .message-border-dash-lg-none {
+        border: none;
+    }
+
+    #montageInfo {
+        .modal-dialog {
+            max-width: 836px;
+        }
+    }
+}

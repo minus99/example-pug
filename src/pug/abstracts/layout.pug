@@ -1,0 +1,85 @@
+include variables.pug
+include mixins.pug
+doctype html
+html(lang=lang class=developer_mode == true ? "developer-mode" : '')
+    //HEAD
+    head
+        block head
+            meta(charset="UTF-8")
+            meta(name="viewport" content="width=device-width, initial-scale=1")
+            link(rel="manifest" href="manifest-min.json")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            meta(name="theme-color" content=siteColor)
+            link(rel="shortcut icon" type="image/x-icon" media="all" href=favicon)
+            //Add to homescreen for Chrome on Android
+            meta(name="mobile-web-app-capable" content="yes")
+            meta(name="application-name" content="Proje")
+            link(rel="icon" sizes="192x192" href=favicon_android)
+            //Add to homescreen for Safari on iOS
+            meta(name="apple-mobile-web-app-capable" content="yes")
+            meta(name="apple-mobile-web-app-status-bar-style" content=siteColor)
+            meta(name="apple-mobile-web-app-title" content="Proje")
+            link(rel="apple-touch-icon" href=favicon_ios)
+            link(rel="icon" type="image/png" sizes="32x32" href=favicon)
+            title=pageTitle
+            meta(name="description" content=pageDesc)
+
+            //app shell
+            style
+                include ../../../dist/css/app-shell.css
+            
+            //css
+            link(rel="stylesheet", href="css/style.css")
+            
+            //dns-prefetch
+            <link rel="dns-prefetch" href="connect.facebook.net">
+            
+            //serviceWorker
+            script.
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('/sw----.js').then(function(reg) {
+                        if(reg.installing) {
+                            console.log('sw installing');
+                        } else if(reg.waiting) {
+                            console.log('sw installed');
+                        } else if(reg.active) {
+                            console.log('sw active');
+                        }
+                    }).catch(function(error) {
+                        // registration failed
+                        console.log('Registration failed with ' + error);
+                    });
+                }
+
+    //HEAD
+    body(class=pageClass)
+        //HEADER
+        block header
+            header(class="site-header")
+                include ../includes/header.pug
+        //HEADER
+        //PAGE CONTENT
+        main(class="site-main d-flex flex-column")
+            block content
+                h1(style="margin: 100px 0; text-align: center;") page content here
+        //PAGE CONTENT
+        //FOOTER
+        block footer
+            footer(class="site-footer mt-20 mt-lg-0 pb-30")
+                include ../includes/footer.pug
+        //FOOTER
+        //FOOT
+        block foot
+            if developer_mode
+                script(src="js/libs/jquery.min.js")
+                script(src="js/libs/bootstrap.bundle.min.js")
+                script(src="js/libs/swiper.min.js")
+                script(src="js/libs/jquery.countdown.js")
+                script(src="js/libs/jquery.countdown-tr.js")
+                script(src="js/libs/customEvents-99.1.0.min.js")
+                script(src="js/custom-plugins.js")
+                script(src="js/config.js")
+                script(src="js/allScripts.js")
+            else
+                script(src="js/all.js")
+        //FOOT

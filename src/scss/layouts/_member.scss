@@ -1,0 +1,151 @@
+// Üyelik Mobil 2.seviye Sayfalar
+
+.members-header-d-none_d-lg-block{
+    .site-header{
+        display: none;
+    }
+    .member-left-menu{
+        .dropdown{
+            display: none;
+        }
+    }
+}
+
+
+.page-member {
+    .container {
+        .member-content {
+            .nav-tabs {
+                li {
+                    a {
+                        :hover {
+                            border: none;    
+                        }
+                    }
+
+                    border-bottom: 2px solid $color3;
+                    .active {
+                        background-color: $color12;
+                        border-bottom: 2px solid $color8;
+                    }
+                }
+            }
+            .active-new-msg {
+                background-color: #24c129 !important;
+            }
+            .member-new-msg-status {
+                width: 8px;
+                height: 8px;
+                background-color: $color1;
+                border-radius: 100%;
+            }
+            .member-msg-status {
+                position: absolute;
+                right: 20px;
+                color: #24c129;
+            }
+
+            .favorite-page-bottom {
+                a {
+                    &:hover {
+                        color: $color8 !important
+                    }
+                }
+            }
+
+            .member-message-user {
+                background-color: $color9;
+                width: 41px;
+                height: 41px;
+                border-radius: 100%;
+                .icon-user-icon {
+                    width: 16px;
+                    margin: 0 !important;
+                    padding-top: 5px;
+                }
+            }
+
+            .rebate-choose-file {
+                .custom-file-label {
+                    &:after{
+                        content:'+';
+                        background-color: $color255 !important;
+                        border-left: none !important;
+                        line-height: 1.5 !important;
+                    }
+                }
+            }
+        }
+        .prd-discount {
+            width: 33px;
+            height: 33px;
+        }
+    }
+    .nav-tabs {
+        border-bottom: none;
+    }
+
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        background-color: $color255;
+        border-color: $color255;
+    }
+
+    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+        border-bottom-color: $color3;
+    }
+
+    .grid-prd-chng {
+        margin-bottom: 0;
+        li {
+            border-bottom: 1px solid #f3f3f7;
+            padding: 15px 0 !important;
+        }
+    }
+
+    .text-opacity-color {
+        color: #24c129;
+        opacity: .5;
+    }
+    
+    .text-color-green {
+        color: #24c129;
+    }
+
+    .reply-order {
+        &:hover {
+            color: $color10;
+        }
+    }
+
+    .disabled-comment {
+        border: none;
+        background-color: $color3;
+        color: $color2;
+    }
+    
+    .button-fixed-bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    .bg-gray {
+        background-color: $color4!important;
+    }
+
+    .message-border-dash {
+        border: 1px dashed $color3;
+    }
+
+    .member-new-msg-status {
+        width: 8px;
+        height: 8px;
+        background-color: $color1;
+        border-radius: 100%;
+    }
+
+    .active-new-msg {
+        background-color: #24c129 !important;
+    }
+    
+}

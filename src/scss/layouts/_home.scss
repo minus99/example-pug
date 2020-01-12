@@ -1,0 +1,28 @@
+.page-home {
+    .module-bar2 {
+        display: block !important;
+    }
+    .mini-search-compact {
+        display: none !important;
+    }
+}
+
+.daily-opportunity {
+    @include aspect-ratio(375, 170);
+}
+
+.primary-categories {
+    @include aspect-ratio(338, 200);
+}
+
+.opportunity-products {
+    @include aspect-ratio(166, 121);
+}
+
+.campaigns {
+    @include aspect-ratio(375, 250);
+}
+
+.primary-products {
+    @include aspect-ratio(120, 125)
+}

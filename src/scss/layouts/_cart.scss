@@ -1,0 +1,239 @@
+.cart-header-lg-block{
+    .cart-header{
+        display: none;
+    }
+}
+
+.cart-header{
+    .cart-icons{
+        .mini-cart-qty{
+            right:0px;
+            top:0px;
+            width:16px;
+            height:16px;
+        }
+    }
+}
+
+.cart-steps{
+    .step-icon{
+        color:$color2;
+    }
+    .dashed-line{
+        height:5px;
+    }
+}
+
+.cart-step1{
+    .step-item{
+        &-1{
+            .step-icon{
+                color:$color8;
+            }
+        }
+    }
+}
+
+
+
+.cart-step2{
+    .open-cart{
+        display: none !important;
+    }
+    .step-item{
+        &-1 , &-2{
+            .step-icon{
+                color:$color8;
+            }
+        }
+    }
+}
+
+.cart-step3{
+    .open-cart{
+        display: none !important;
+    }
+    .step-item{
+        &-1 , &-2 , &-3{
+            .step-icon{
+                color:$color8;
+            }
+        }
+    }
+}
+
+.cart-layout{
+    &-left{
+        &-wrapper{
+            .prd-content{
+                min-height:120px
+            }
+            .prd-delete{
+                position: absolute;
+                right:0px;
+                top:0px;
+                max-width:40px;
+            }
+        }
+    }
+    &-right{
+        &-wrapper{
+            .cart-summary{
+                padding-bottom:90px;
+            }
+            .cart-coupon-btn{
+                a{
+                    &[aria-expanded="true"] {
+                        display: none;
+                    }                
+                }
+            }
+            .cart-coupon{
+                .input-group-append{
+                    right:0px;
+                    top:50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .cart-next-buttons{
+                position:fixed;
+                bottom:0px;
+                left:0px;
+                width:100%;
+                z-index: 100;
+            }
+            .cart-summary-total-price{
+                position: fixed;
+                left:0px;
+                bottom:44px;
+                width:100%;
+                z-index: 100;
+                border-top:1px solid $color4;
+            }
+        }
+    }
+    &-bottom{
+        &-wrapper{
+        }
+    }
+}
+
+.cont-shopping{
+    svg{
+        @extend .rotate-left;
+    }
+}
+
+
+
+//Delivery
+
+#address-choose{
+    .modal-close{
+        display: none;
+    }
+    .modal-header{
+        padding-right:15px;
+    }
+}
+
+.delivery-layout{
+    .delivery-adress-type{
+        border-bottom:1px solid $color4;
+    }
+    .cargos{
+        height:400px;
+    }
+    .custom-scrollbar-shadow{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+        pointer-events: none;
+        height:110px;
+    }
+}
+
+// Delivery New Adress
+
+.page-delivery-new-address{
+    .cart-header{
+        display: none;
+    }
+}
+
+
+
+// Payment
+
+.mns-custom-nav{
+    .mns-nav-item{
+        border-bottom:2px solid $color3;
+        &.active{
+            border-bottom:2px solid $color8;
+        }
+    }
+}
+
+#payment-info-form , #sales-contract{
+    .custom-height{
+        max-height:210px;
+    }
+}
+
+.payment-products , .payment-address{
+    border-top:1px solid $color3;
+    height: min-content;
+    .custom-height{
+        max-height:300px;
+    }
+}
+
+.payment-products{
+    .cart-prd{
+        border-bottom:1px solid $color3;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+}
+
+.cvc-info{
+    position: absolute;
+    top:20px;
+    right:5px;
+    padding: 5px;
+    &-text{
+        display: none;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+        width:275px;
+        padding:15px;
+        z-index: 3000;
+        background: $color255;
+        transform: translateX(-25%);
+        left:-235px;
+        img{
+            max-width:90px;
+        }
+    }
+    &:hover{
+        .cvc-info-text{
+            display: block !important;
+        }
+    }
+}
+
+.page-order-payment-success{
+    .payment-right{
+        padding-bottom:100px;
+    }
+    .payment-buttons{
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        z-index:1;
+    }
+}

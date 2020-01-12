@@ -1,0 +1,77 @@
+.corporate-left-menu , .member-left-menu{
+    &-wrapper{
+        position: sticky;
+        top:$header-main-height-lg + 30px;
+        z-index: 1;
+    }
+    .dropdown-menu{
+        position: relative;
+        float: inherit;
+        transform: none !important;
+        .dropdown-item{
+            width:100%;
+        }
+    }
+}
+
+.page-contact{
+    .contact-map{
+        iframe{
+            height:450px;
+        }
+    }
+}
+
+.page-catalogs{
+    .catalog-items{
+        @include aspect-ratio(182, 254);
+    }
+}
+
+.page-campaigns-list{
+    .campaigns{
+        background: $color255 !important;
+        box-shadow: 0 0 6px 0 rgba(0,0,0,0.14);
+    }
+    .campaigns-filter{
+        > a{
+            padding:16px !important;
+        }
+    }
+}
+
+
+// MARKALAR
+.page-brand-list {
+    .sticky-lg-top {
+        top: $header-main-height-lg;
+    }
+}
+.letter-group {
+    .custom-scrollbar {
+        max-height: 400px;
+        a {
+            &.active {
+                background: $color255;
+            }
+        }
+    }
+}
+
+// MAĞAZALAR
+.page-dealer-list {
+    .header-main .module-bar1 {
+        padding-right: 0;
+    }
+    > .site-main {
+        background: $color255;
+    }
+}
+.dealer {
+    // dealer detail
+    &-detail {
+        height: calc(100vh - #{$header-main-height-lg + 60px});
+        top: #{$header-main-height-lg + 30px};
+        z-index: $zindex-fixed - 1;
+    }
+}

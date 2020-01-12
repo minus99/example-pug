@@ -1,0 +1,32 @@
+[data-toggle="collapse"] {
+    > svg {
+        transition: all .2s ease;
+    }
+    &[aria-expanded="false"] {
+        > .icon-minus {
+            display: none;
+        }
+
+        > .icon-arrow5 {
+            font-size: 0;
+            margin-right: 0;
+        }
+    }
+    &[aria-expanded="true"] {
+        > .icon-plus {
+            display: none;
+        }
+        > .icon-minus {
+            transform: none;
+        }
+
+        .icon-arrow1 {
+            transform: rotate(90deg);
+        }
+
+        .icon-arrow5 {
+            font-size: 32px;
+            margin-right: 5px;
+        }
+    }
+}

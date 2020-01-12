@@ -1,0 +1,29 @@
+$ml: 5px;
+.countdown_row {
+    display: flex;
+    margin-left: -$ml;
+}
+.countdown_section {
+    background: $color255;
+    padding: 5px 2px;
+    border-radius: 2px;
+    min-width: 34px;
+    margin-left: $ml;
+    line-height: 1;
+    &:first-child {
+        display: none;
+    }
+    > span {
+        display: block;
+        text-align: center;
+    }
+}
+.countdown_amount {
+    font-size: 18px;
+    font-weight: 700;
+}
+.countdown_time {
+    font-size: 10px;
+    color: $color2;
+    margin-top: 2.8px;
+}

@@ -1,0 +1,114 @@
+// Font Sizes
+.font-size-lg {
+    &-0 {
+        font-size: $font-size0 !important;
+    }
+    &-1 {
+        font-size: $font-size1 !important;
+    }
+    &-2 {
+        font-size: $font-size2 !important;
+    }
+    &-3 {
+        font-size: $font-size3 !important;
+    }
+    &-4 {
+        font-size: $font-size4 !important;
+    }
+    &-5 {
+        font-size: $font-size5 !important;
+    }
+    &-6 {
+        font-size: $font-size6 !important;
+    }
+    &-7 {
+        font-size: $font-size7 !important;
+    }
+    &-8 {
+        font-size: $font-size8 !important;
+    }
+    &-9 {
+        font-size: $font-size9 !important;
+    }
+    &-10 {
+        font-size: $font-size10 !important;
+    }
+}
+
+// Font Weights
+.font-weight-lg {
+    &-1 {
+        font-weight: 100 !important;
+    }
+    &-2 {
+        font-weight: 200 !important;
+    }
+    &-3 {
+        font-weight: 300 !important;
+    }
+    &-4 {
+        font-weight: 400 !important;
+    }
+    &-5 {
+        font-weight: 500 !important;
+    }
+    &-6 {
+        font-weight: 600 !important;
+    }
+    &-7 {
+        font-weight: 700 !important;
+    }
+    &-8 {
+        font-weight: 800 !important;
+    }
+    &-9 {
+        font-weight: 900 !important;
+    }
+    &-10 {
+        font-weight: 950 !important;
+    }
+}
+
+//Positions
+.position-lg {
+    &-static {
+        position: static !important;
+    }
+}
+.sticky-lg {
+    &-top {
+        position: sticky !important;
+        top: 0;
+        align-self: flex-start;
+        height: auto;
+    }
+}
+
+// Footer Show on Desktop
+.footer-d-none_d-lg-block {
+    .site-footer {
+        display: block;
+    }
+}
+
+.back-button{
+    background: none;
+}
+
+// Backgrounds
+.bg-lg {
+    &-c4 {
+        background-color: $color4 !important;
+    }
+    &-c255 {
+        background-color: $color255 !important;
+    }
+    &-transparent {
+        background-color: transparent !important;
+    }
+}
+
+// display grid
+.d-lg-grid {
+    display: grid;
+}

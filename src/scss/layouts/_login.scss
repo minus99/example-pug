@@ -1,0 +1,24 @@
+.page-login-content{
+    > .container{
+        background: $color4;
+    }
+    .member-login-form-area{
+        &-tab{
+            .nav-item{
+                background: $color4;
+                border-bottom:2px solid $color3;
+                cursor: pointer;
+                &.active{
+                    border-bottom:2px solid $color8;
+                }
+            }
+        }
+        &-content{
+            height:100vh;
+            .continue-guest-login{
+                margin:50px -20px;
+                background:$color4;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.landing-page {
+    .site-main {
+        background-color: #1e1e1e;
+    }
+
+    .landing-product-list {
+        background-color: #761eff;
+        .swiper-wrapper {
+            li {
+                padding: 10px;
+                border-radius: 5px;
+                background-color: $color255;
+                height: auto;
+            }
+        }
+    }
+
+    .landing-categories-list {
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            min-height: 249px;
+            background-image: url(../images/frontend/pattern01.png);
+            background-position: left top;
+        }
+    }
+
+    .landingcampaigns {
+        @include aspect-ratio(375, 290);
+    }
+
+    .landing-categories-list {
+        @include aspect-ratio(166, 121);
+    }
+
+    .landing-blog-posts {
+        @include aspect-ratio(590, 440);
+    }
+}
+
+.font-size-32 {
+    font-size: 32px;
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.trend-categories {
+    .swiper-slide {
+        padding-top: 90px;
+    }
+    img {
+        margin-top: -90px;
+    }
+}

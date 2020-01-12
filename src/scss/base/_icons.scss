@@ -1,0 +1,22 @@
+svg[class^="icon-"] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    vertical-align: middle;
+    font-size: 32px;
+    flex: none;
+}
+
+
+%bg-icon {
+    background-repeat: no-repeat;
+    &-minus {
+        background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23838383' d='M16.5 10.5V15H21v1h-4.501l.001 4.5h-1l-.001-4.5H11v-1h4.5v-4.5h1z'/%3E%3C/svg%3E%0A");
+    }
+    &-plus {
+        background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23838383' d='M11 15h10v1H11z'/%3E%3C/svg%3E%0A");
+    }
+}
